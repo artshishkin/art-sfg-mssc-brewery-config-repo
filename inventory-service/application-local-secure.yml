@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/beerservice?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC
+    username: beer_service
+    password: '{cipher}e62c63f1592bdd2facab9d0c107d22c75cd3a5777ceabbcb71c05974a993eb0a'
+  artemis:
+    user: artemis
+    password: '{cipher}11ea436bd1d2624465d035390ed8cb69ad86b656041ec8641fc8da066fc50e36'
+
