@@ -1,12 +1,12 @@
 spring:
   zipkin:
     enabled: true
-    base-url: http://10.114.16.8:9411
+    base-url: http://10.114.16.10:9411
 
 spring.artemis:
   user: artemis
   password: simetraehcapa
-  host: 10.114.16.7
+  host: 10.114.16.9
 
 spring.jpa:
   database: mysql
