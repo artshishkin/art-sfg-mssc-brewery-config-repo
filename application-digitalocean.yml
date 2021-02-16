@@ -6,7 +6,7 @@ spring:
 spring.artemis:
   user: artemis
   password: simetraehcapa
-  host: 10.114.16.9
+  host: 10.114.16.7
 
 spring.jpa:
   database: mysql
