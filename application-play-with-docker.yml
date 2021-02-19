@@ -1,0 +1,35 @@
+spring:
+  zipkin:
+    enabled: true
+    base-url: http://zipkin:9411
+
+spring.artemis:
+  user: artemis
+  password: simetraehcapa
+  host: jms
+
+spring.jpa:
+  database: mysql
+  hibernate.ddl-auto: update
+  properties.hibernate.dialect: org.hibernate.dialect.MySQL8Dialect
+
+spring.datasource:
+  driver-class-name: com.mysql.cj.jdbc.Driver
+  hikari:
+    maximum-pool-size: 5
+    data-source-properties:
+      cachePrepStmts: true
+      prepStmtCacheSize: 250
+      prepStmtCacheSqlLimit: 2048
+      useServerPrepStmts: true
+      useLocalSessionState: true
+      rewriteBatchedStatements: true
+      cacheResultSetMetadata: true
+      cacheServerConfiguration: true
+      elideSetAutoCommits: true
+      maintainTimeStats: false
+
+# Enable logging to verify that HikariCP is used, the second entry is specific to HikariCP
+#logging.level.org.hibernate.SQL=DEBUG
+#logging.level.com.zaxxer.hikari.HikariConfig=DEBUG
+#logging.level.org.hibernate.type.descriptor.sql.BasicBinder=TRACE
